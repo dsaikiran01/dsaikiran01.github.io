@@ -1,5 +1,6 @@
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.querySelector("#navbar");
+const navMenu = document.getElementById("nav-menu");
+const navLinks = document.querySelectorAll(".nav-link");
 
 const roles = ["web developer", "software engineer", "cloud enthusiast", "open-source contributor"];
 let currentIndex = 0;
@@ -10,14 +11,19 @@ function changeRole() {
     roleElement.textContent = roles[currentIndex];
 }
 
-function mobileMenu() {
+const mobileMenu = () => {
     navMenu.classList.toggle("display");
 }
 
-function closeMenu() {
+const closeMenu = () => {
     navMenu.classList.remove("display");
 }
 
+// changing roles on About
 setInterval(changeRole, 1500);
-hamburger.onclick = mobileMenu;
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+// for the hamburger in mobiles
+hamburger.addEventListener("click", mobileMenu);
+
+// Close menu when any nav link is clicked
+navLinks.forEach(link => link.addEventListener("click", closeMenu));

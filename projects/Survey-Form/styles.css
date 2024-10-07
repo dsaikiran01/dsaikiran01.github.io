@@ -1,0 +1,135 @@
+header {
+  text-align: center;
+}
+
+body {
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+#title {
+  color: white;
+  font-size: 2.2em;
+}
+
+#description {
+  color: white;
+  font-size: 1em;
+  font-style: italic;
+  width: 60%;
+  margin: 0 auto 5px auto;
+}
+
+form {
+  width: 60%;
+  font-family: Poppins;
+  background-color: #1b1b32;
+  margin: 0 auto;
+  border: none;
+  padding: 15px 10px 20px 10px;
+}
+
+label {
+  color: white;
+  display: block;
+  /* margin: 0.5rem 0; */
+}
+
+input {
+  color: gray;
+  padding: 5px;
+  border-top: 5px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  border-radius: 2px;
+}
+
+#name-label {
+  padding: 10px 0;
+
+}
+
+#email-label {
+  padding: 10px 0;
+}
+
+#number-label {
+  padding: 10px 0;
+}
+
+.basic-details {
+  padding: 10px;
+  font-family: Poppins;
+}
+
+/*dropdowns*/
+
+#role {
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  font-family: Poppins;
+  color: gray;
+  border: 10px 0;
+  padding: 5px;
+}
+
+option {
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+#recommend {
+  margin: 15px 0;
+}
+
+input[type="radio"] {
+  width: unset;
+  margin: 5px 3px;
+  height: 1.2em;
+}
+
+#favourite {
+  margin: 15px 0 10px 0;
+}
+
+#improve {
+  margin: 10px 0;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  margin: 5px 3px;
+  height: 1.2em;
+}
+
+#comments {
+  font-family: Poppins;
+  padding: 10px;
+  margin: 10px 0 25px 0;
+}
+
+input[type="submit"] {
+  background-color: #08D858;
+  border: none;
+  border-radius: 2px;
+  border-color: white;
+  color: #e8f9f8;
+}

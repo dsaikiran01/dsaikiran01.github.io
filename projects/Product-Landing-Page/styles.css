@@ -1,0 +1,308 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  min-width: 200px;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* header */
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  height: 75px;
+  background-color: #f5f5f5;
+}
+
+#logo {
+  width: 65%;
+}
+
+#header-img {
+  min-width: 250px;
+  width: 350px;
+  height: 35px;
+  padding: 20px;
+}
+
+#nav-bar {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+#header a {
+  text-decoration: none;
+  color: #010101;
+  margin-right: auto;
+}
+
+/* form */
+
+#container {
+  margin-top: 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form label {
+  width: 70%;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px 0 10px;
+  text-align: center;
+}
+
+#form input[type="email"] {
+  min-width: 250px;
+  max-width: 400px;
+  width: 45%;
+  height: 30px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+#form input[type="submit"] {
+
+  min-width: 120px;
+  width: 20%;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px 0 5px;
+  border-style: none;
+  background-color: #ffcc00;
+}
+
+/* body */
+
+#features {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto 20px;
+
+}
+
+.feature {
+  width: 100%;
+  height: 20%;
+}
+
+.feature-logo {
+  float: left;
+  width: 120px;
+  height: 90%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+
+.feature-logo i {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-description {
+  margin-left: 140px;
+  height: 60px;
+}
+
+.feature-head {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -40%;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+
+#how-it-works {
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 20px auto;
+  width: 40%;
+  height: 350px;
+  align-items: center;
+  background-color: red;
+}
+
+#video {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* pricing */
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+  margin: 40px auto;
+}
+
+
+
+#pricing-600,
+#pricing-900,
+#pricing-1200 {
+  border: 1px solid black;
+  width: 260px;
+  height: 280px;
+  margin-right: 20px;
+  padding: 0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#pricing .heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #e4e6eb;
+  margin: 0;
+  height: 50px;
+  font-size: 16px;
+}
+
+#pricing li {
+  width: 100%;
+  font-size: 14px;
+}
+
+#pricing .price {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px auto;
+}
+
+#pricing li:not(.price) {
+  padding-bottom: 8px;
+}
+
+.pricing-button {
+  font-size: 20px;
+  background-color: #ffcc00;
+}
+
+
+/* footer */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e6eb;
+}
+
+#footer ul {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 0;
+
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+
+#footer li:last-of-type {
+  padding-right: 30px;
+}
+
+.copyright {
+  margin-left: auto;
+  margin-top: 0;
+  padding-right: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    padding-left: 0;
+  }
+
+  #logo {
+    width: 60vw;
+  }
+
+  #nav-bar {
+    display: grid;
+    justify-content: center;
+    margin-top: -10px;
+    row-gap: 2px;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  #container {
+    margin-top: 100px;
+  }
+
+  #features {
+    height: 350px;
+  }
+
+  .feature {
+    margin-bottom: 40px;
+  }
+
+  #how-it-works {
+    width: 100%;
+    height: 300px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing-600,
+  #pricing-900,
+  #pricing-1200 {
+    margin-bottom: 10px;
+  }
+}
