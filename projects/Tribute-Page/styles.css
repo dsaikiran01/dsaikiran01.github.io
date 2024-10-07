@@ -1,0 +1,72 @@
+html {
+  margin: 0;
+  background-color: #333;
+}
+
+body {
+  background: #eeeeff;
+  font-family: sans-serif;
+  margin: 0;
+  border-top: 0;
+}
+
+#main {
+  text-align: center;
+  background-color: #F0F0F0;
+}
+
+#figure {
+  background-color: #F0F0F6;
+}
+
+#img-div {
+  align-items: center;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #477ca7;
+}
+
+#life-story {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  border: 1px solid #f7f6cf;
+}
+
+ul>li {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.year {
+  font-weight: bold;
+}
+
+#thought {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quoter {
+  font-size: 20px;
+}
