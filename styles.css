@@ -79,7 +79,7 @@ li {
   border-radius: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   #navbar {
     width: 100%;
     height: fit-content;
@@ -157,6 +157,7 @@ li {
 #projects {
   height: auto;
   background-color: #45567D;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -168,14 +169,14 @@ li {
   padding-top: 50px;
 }
 
-.underline {
+/* .underline {
   height: 2px;
-  width: 33em;
+  width: 200px;
   background-color: var(--main-text);
   margin: auto;
   margin-top: -30px;
   margin-bottom: 50px;
-}
+} */
 
 #projects-grid {
   width: 90%;
