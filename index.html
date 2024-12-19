@@ -15,7 +15,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 </head>
 
 <body>
@@ -23,18 +26,23 @@
 
         <!-- navbar -->
         <header id="header">
-            <navbar id="navbar">
-                <div id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <navbar class="navbar">
+                <!-- <div class="logo-section"> -->
+                    <div class="logo">DSK</div>
+                <!-- </div> -->
+
+                <div class="hamburger" onclick="toggleHamburger()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
 
-                <ul id="nav-menu">
-                    <li><a class="nav-link" href="#welcome-section">About</a></li>
-                    <li><a class="nav-link" href="#projects">Work</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+                <div class="nav-menu">
+                    <a class="nav-link" href="#welcome-section">About</a>
+                    <a class="nav-link" href="#projects">Work</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </ul>
+                </div>
             </navbar>
         </header>
 

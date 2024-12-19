@@ -5,6 +5,14 @@ const navLinks = document.querySelectorAll(".nav-link");
 const roles = ["web developer", "software engineer", "cloud enthusiast", "open-source contributor"];
 let currentIndex = 0;
 
+// Toggle hamburger menu state
+function toggleHamburger() {
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.classList.toggle('active');
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('active'); // Toggle menu visibility on click
+}
+
 function changeRole() {
     const roleElement = document.getElementById("role");
     currentIndex = (currentIndex + 1) % roles.length;

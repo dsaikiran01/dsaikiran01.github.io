@@ -1,0 +1,82 @@
+/* contact section */
+
+#contact {
+    height: 90vh;
+    color: var(--main-text);
+    background-color: var(--main-gray);
+}
+
+#profiles {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profiles h1,
+#profiles p {
+    text-align: center;
+}
+
+#profiles h1 {
+    font-size: 3rem;
+}
+
+#profiles p {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: -30px;
+    color: #DCDCDC;
+}
+
+#profile-links {
+    text-align: center;
+    margin-top: -150px;
+    justify-content: center;
+}
+
+#profile-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    font-size: 25px;
+    width: 80%;
+    height: 20%;
+    margin: 0px auto 60px auto;
+    padding: 0;
+}
+
+#profile-link {
+    padding: 5px;
+    color: var(--main-text);
+    border-radius: 5px;
+}
+
+#profile-link:hover {
+    background: white;
+    color: var(--main-gray);
+}
+
+#gap {
+    width: 100%;
+    height: 2px;
+    margin-top: 140px;
+    background-color: var(--main-red);
+}
+
+#copyright {
+    float: right;
+    height: 15%;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    #profile-links ul li {
+        width: 100%;
+    }
+}
