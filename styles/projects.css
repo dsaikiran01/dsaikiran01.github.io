@@ -20,7 +20,7 @@
     width: 25rem;
     background-color: var(--main-text);
     margin: auto;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     margin-bottom: 50px;
 }
 
@@ -52,12 +52,13 @@
 
 .project-tile:hover {
     transform: scale(1.1);
+    z-index: 0;
 }
 
 .project-tile img {
     width: 500px;
     height: 200px;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .project-description {

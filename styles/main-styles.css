@@ -7,15 +7,13 @@
 * {
   font-family: Poppins, "sans-serif";
   box-sizing: border-box;
-}
-
-html {
-  min-width: 300px;
-  background-color: var(--main-gray);
-}
-
-body {
   margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: var(--main-gray);
+  width: 100%;
   padding: 0;
 }
 
@@ -26,6 +24,11 @@ a {
 
 li {
   list-style: none;
+}
+
+#container {
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /* welcome section */

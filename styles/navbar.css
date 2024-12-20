@@ -5,6 +5,7 @@
 #header {
     position: fixed;
     width: 100vw;
+    z-index: 10;
 }
 
 .navbar {
@@ -20,29 +21,6 @@
 }
 
 /* Logo Styling */
-.logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 36px;
-    font-weight: bold;
-    color: transparent;
-    background: linear-gradient(45deg, #ff007f, #ffb000, #00c6ff, #32cd32);
-    height: 2vh;
-    width:3vw;
-    background-color: #000;
-    /* background: linear-gradient(45deg, #808080, #FFFFFF, #000000, #FF1493, #FFD700); */
-    background-clip: text;
-    -webkit-background-clip: text;
-
-    color: transparent;
-    /* For Safari */
-    transition: all 0.3s ease-in-out;
-}
-
-/* .logo-section {
-    background-color: #000;
-    height: 100%;
-    width: 5vw;
-} */
 
 .logo {
     font-family: 'Dancing Script', cursive;
@@ -50,7 +28,8 @@
     font-size: 3rem;
     font-weight: bold;
     color: transparent;  /* Make the text color transparent to show the background */
-    background: linear-gradient(45deg, #ff007f, #ffb000, #00c6ff, #32cd32);
+    /* background: linear-gradient(45deg, #ff007f, #ffb000, #00c6ff, #32cd32);*/
+    background: linear-gradient(45deg, #1AAD7B, #1cd396, #32cd32, #ffb000);
     background-clip: text;  /* Clips the background to the text */
     -webkit-background-clip: text; /* For Safari compatibility */
     
@@ -59,6 +38,30 @@
     width: auto;   /* Remove fixed width */
     
     transition: all 0.3s ease-in-out; /* Smooth transition */
+    cursor: pointer;
+}
+
+.logo:hover {
+    animation: shine 1.5s infinite; /* Shimmer animation */
+}
+
+/* Define the shining animation */
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 2px #1AAD7B, 0 0 3px #1AAD7B, 0 0 4px #1AAD7B;
+    }
+    25% {
+        text-shadow: 0 0 2px #1cd396, 0 0 3px #1cd396, 0 0 4px #1cd396;
+    }
+    50% {
+        text-shadow: 0 0 2px #32cd32, 0 0 3px #32cd32, 0 0 4px #32cd32;
+    }
+    75% {
+        text-shadow: 0 0 2px #ffb000, 0 0 3px #ffb000, 0 0 4px #ffb000;
+    }
+    100% {
+        text-shadow: 0 0 2px #1AAD7B, 0 0 3px #1AAD7B, 0 0 4px #1AAD7B;
+    }
 }
 
 
@@ -83,7 +86,7 @@
     background: linear-gradient(red, rgb(246, 89, 89));
 }
 
-.hamburger {
+#hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -93,7 +96,7 @@
     z-index: 10;
 }
 
-.hamburger div {
+#hamburger div {
     height: 5px;
     width: 100%;
     background-color: #fff;
@@ -103,17 +106,17 @@
 }
 
 /* Hamburger Menu Animation (X on Click) */
-.hamburger.active div:nth-child(1) {
+#hamburger.active div:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
     top: 10px;
 }
 
-.hamburger.active div:nth-child(2) {
+#hamburger.active div:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active div:nth-child(3) {
+#hamburger.active div:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
     top: -10px;
@@ -123,13 +126,13 @@
 @media (max-width: 768px) {
     /* hamburger styles */
 
-    .hamburger {
+    #hamburger {
         display: block;
     }
 
      /* menu styles */
 
-     .nav-menu.active {
+    .nav-menu.active {
         display: flex;
         flex-direction: column;
     }
@@ -151,9 +154,9 @@
         border-bottom-left-radius: 2rem;
     }
 
-    .nav-menu.display {
+    /* .nav-menu.display {
         display: block;
-    }
+    } */
 
     .nav-menu a {
         width: 100%;
@@ -179,7 +182,7 @@
 
 /* Desktop View */
 @media (min-width: 768px) {
-    .hamburger {
+    #hamburger {
         display: none;
     }
 

@@ -1,7 +1,7 @@
 /* contact section */
 
 #contact {
-    height: 90vh;
+    height: 75vh;
     color: var(--main-text);
     background-color: var(--main-gray);
 }
@@ -26,7 +26,7 @@
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 100;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     color: #DCDCDC;
 }
 
@@ -70,13 +70,28 @@
     float: right;
     height: 15%;
     font-size: 25px;
+    color: var(--main-text);
     margin-top: 10px;
     margin-right: 40px;
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
+    #contact {
+        height: 65vh;
+    }
+
+    #profile-links {
+        height: fit-content;
+        margin-top: -80px;
+    }
+
     #profile-links ul li {
         width: 100%;
+        margin: 10px auto;
+    }
+
+    #profiles p {
+        margin: 0 auto 100px;
     }
 }

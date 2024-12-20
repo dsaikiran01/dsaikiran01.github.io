@@ -2,12 +2,30 @@
 <html lang="en">
 
 <head>
-    <title>Dumpala Sai Kiran | Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <title>Dumpala Sai Kiran | Software Developer Portfolio</title>
     <meta name="keywords"
-        content="Dumpala Sai Kiran, D Sai Kiran, Sai Kiran, DSK, Portfolio, Software Developer, Software, Developer, Web Developer, JNTU, JNTUH, JNTR, JNTU Rajanna Sircilla, JNTU Sircilla, Student">
-    <meta name="description" content="Software Developer Portfolio of Dumpala Sai Kiran">
+        content="Dumpala Sai Kiran, D Sai Kiran, DSK, Software Developer Portfolio, Web Developer, Full Stack Development, JavaScript, MERN Stack, Google Cloud, Responsive Design, Professional Developer Website, JNTUH, JNTR, JNTU Rajanna Sircilla">
+    <meta name="description"
+        content="Welcome to the personal portfolio of Dumpala Sai Kiran, a skilled software and web developer specializing in building responsive, scalable, and user-centric web applications using modern technologies like the MERN stack, Google Cloud, and more. Explore projects, skills, and contact details." />
+    <link rel="canonical" href="https://dsaikiran01.github.io/" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Dumpala Sai Kiran | Software Developer Portfolio" />
+    <meta property="og:description"
+        content="Explore Dumpala Sai Kiran's personal portfolio showcasing web and software development projects using modern technologies like the MERN stack and Google Cloud." />
+    <meta property="og:image" content="https://dsaikiran01.github.io/assets/Dev-boy.png" />
+    <meta property="og:url" content="https://dsaikiran01.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="https://dsaikiran01.github.io/assets/Dev-boy.png" />
+    <meta name="twitter:title" content="Dumpala Sai Kiran | Software Developer Portfolio" />
+    <meta name="twitter:description"
+        content="Explore Dumpala Sai Kiran's portfolio for web and software development projects built with MERN stack, Google Cloud, and more." />
+    <meta name="twitter:image" content="https://www.yourwebsite.com/assets/portfolio-preview.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +33,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./styles/main-styles.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/contact.css">
@@ -28,10 +49,10 @@
         <header id="header">
             <navbar class="navbar">
                 <!-- <div class="logo-section"> -->
-                    <div class="logo">DSK</div>
+                <a href="#welcome-section" class="logo-a"><div class="logo">DSK</div></a>
                 <!-- </div> -->
 
-                <div class="hamburger" onclick="toggleHamburger()">
+                <div id="hamburger" onclick="toggleHamburger()">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -54,7 +75,7 @@
         </main>
 
         <!-- projects -->
-        <div id="projects">
+        <section id="projects">
             <p class="projects-heading">These are some of my projects</p>
             <div class="underline"></div>
 
@@ -127,10 +148,10 @@
 
             <a href="https://github.com/dsaikiran01/" class="show-all" target="_blank">Show all <i
                     class="fas fa-arrow-right"></i></a>
-        </div>
+        </section>
 
         <!-- contact -->
-        <div id="contact">
+        <section id="contact">
             <div id="profiles">
                 <h1>Let's work together...</h1>
                 <p>How do you take your coffee?</p>
@@ -154,11 +175,12 @@
                     </a></li>
                 </ul>
             </div>
-            <div id="gap"></div>
-            <footer id="copyright">
-                <p>&#169; Made with &#x2665; by DSK</p>
-            </footer>
-        </div>
+        </section>
+
+        <div id="gap"></div>
+        <footer id="copyright">
+            <p>&#169; Made with &#x2665; by DSK</p>
+        </footer>
 
     </div>
     <script src="./script.js"></script>
