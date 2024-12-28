@@ -28,7 +28,6 @@
     font-size: 3rem;
     font-weight: bold;
     color: transparent;  /* Make the text color transparent to show the background */
-    /* background: linear-gradient(45deg, #ff007f, #ffb000, #00c6ff, #32cd32);*/
     background: linear-gradient(45deg, #1AAD7B, #1cd396, #32cd32, #ffb000);
     background-clip: text;  /* Clips the background to the text */
     -webkit-background-clip: text; /* For Safari compatibility */
@@ -86,6 +85,10 @@
     background: linear-gradient(red, rgb(246, 89, 89));
 }
 
+.navbar-modal {
+    display: none; /* Hidden by default */
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -124,6 +127,16 @@
 
 /* Mobile View */
 @media (max-width: 768px) {
+    .navbar-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 9;
+    }
+
     /* hamburger styles */
 
     #hamburger {
@@ -153,10 +166,6 @@
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
     }
-
-    /* .nav-menu.display {
-        display: block;
-    } */
 
     .nav-menu a {
         width: 100%;

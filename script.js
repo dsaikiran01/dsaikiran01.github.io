@@ -1,4 +1,5 @@
 const hamburger = document.getElementById("hamburger");
+const navModal = document.querySelector('.navbar-modal');
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
 const logo = document.querySelector('.logo-a');
@@ -53,6 +54,8 @@ function toggleHamburger() {
     const hamburger = document.getElementById('hamburger');
     hamburger.classList.toggle('active');
     const menu = document.querySelector('.nav-menu');
+
+    navModal.style.display = (navModal.style.display === 'block') ? 'none' : 'block';
     menu.classList.toggle('active'); // Toggle menu visibility on click
 }
 
@@ -65,7 +68,13 @@ const closeMenu = () => {
     navMenu.classList.remove("display");
     navMenu.classList.remove("active");
     hamburger.classList.remove("active");
+    navModal.style.display = 'none';
 }
+
+// Navbar modal functionality
+navModal.addEventListener('click', () => {
+    closeMenu();
+});
 
 // changing roles on About
 setInterval(changeRole, 1500);
