@@ -1,2 +1,8 @@
+#folders
+
+.vscode/
+assets/old/
+
+# files
+
 *.txt
-assets/old/*
