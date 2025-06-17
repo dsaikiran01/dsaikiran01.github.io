@@ -34,6 +34,18 @@ const projects = [
         link: "https://weather-pulse-xi.vercel.app/"
     },
     {
+        title: "Yoga Poses Recommender",
+        imgSrc: "./assets/Yoga-Poses-Recommender.png",
+        altText: "Yoga Poses Recommender",
+        link: "https://github.com/dsaikiran01/Yoga-Poses-Recommender"
+    },
+    {
+        title: "Toy Store Search App",
+        imgSrc: "./assets/Toy-Store-Search-App.png",
+        altText: "Toy Store Search App",
+        link: "https://github.com/dsaikiran01/Toy-Store-Search-App"
+    },
+    {
         title: "Pokémon Search App",
         imgSrc: "./assets/Pokémon-Search-App.png",
         altText: "Pokémon Search App",
@@ -97,12 +109,10 @@ projects.forEach(project => {
     tile.className = "project-tile";
 
     tile.innerHTML = `
-    <div class="project-tile">
       <a href="${project.link}" target="_blank">
         <img src="${project.imgSrc}" alt="${project.altText}">
         <p class="project-description">${project.title}</p>
       </a>
-    </div>
     `;
 
     projectGrid.appendChild(tile);
