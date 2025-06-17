@@ -8,9 +8,11 @@
   font-family: Poppins, "sans-serif";
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   background-color: var(--main-gray);
   width: 100%;
@@ -39,7 +41,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-bottom: -35px; */
   color: var(--main-text);
   background: linear-gradient(60deg, #474747 0%, #181719 100%);
 }
@@ -58,6 +59,45 @@ li {
 
 #role {
   color: #40923D
+}
+
+/* .underline {
+  width: 35rem;
+  height: 4px;
+  background-color: var(--main-text);
+  margin: 0 auto 50px;
+  border-radius: 2px;
+} */
+
+/* show all buttons */
+.show-all {
+  display: inline-block;
+  width: 10rem;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #00adb5;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border: 2px solid #00adb5;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.show-all:hover {
+  background: #00adb5;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 173, 181, 0.3);
+}
+
+.show-all i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.show-all:hover i {
+  transform: translateX(5px);
 }
 
 @media (max-width: 500px) {

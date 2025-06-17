@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-    <title>Dumpala Sai Kiran | Software Developer Portfolio</title>
+    <title>Dumpala Sai Kiran | Software Engineer</title>
     <meta name="keywords"
-        content="Dumpala Sai Kiran, D Sai Kiran, DSK, Software Developer Portfolio, Web Developer, Full Stack Development, JavaScript, MERN Stack, Google Cloud, Responsive Design, Professional Developer Website, JNTUH, JNTR, JNTU Rajanna Sircilla">
+        content="Dumpala Sai Kiran, D Sai Kiran, DSK, Portfolio, Software Engineer, Web Developer, Full Stack Engineer, JavaScript, MERN Stack, Google Cloud, Responsive Design, Professional Developer Website, JNTUH, JNTR, JNTU Rajanna Sircilla">
     <meta name="description"
-        content="Welcome to the personal portfolio of Dumpala Sai Kiran, a skilled software and web developer specializing in building responsive, scalable, and user-centric web applications using modern technologies like the MERN stack, Google Cloud, and more. Explore projects, skills, and contact details." />
+        content="Welcome to the portfolio of Dumpala Sai Kiran, a skilled Software Engineer and Web Developer specializing in building responsive, scalable, and user-centric web applications using modern technologies like the MERN stack, Google Cloud, and more. Explore projects, skills, and contact details." />
     <link rel="canonical" href="https://dsaikiran01.github.io/" />
     <meta name="robots" content="index, follow" />
 
-    <meta property="og:title" content="Dumpala Sai Kiran | Software Developer Portfolio" />
+    <meta property="og:title" content="Dumpala Sai Kiran | Software Engineer" />
     <meta property="og:description"
-        content="Explore Dumpala Sai Kiran's personal portfolio showcasing web and software development projects using modern technologies like the MERN stack and Google Cloud." />
+        content="Explore Dumpala Sai Kiran's portfolio showcasing web and software development projects using modern technologies like the MERN stack and Google Cloud." />
     <meta property="og:image" content="https://dsaikiran01.github.io/assets/Dev-boy.png" />
     <meta property="og:url" content="https://dsaikiran01.github.io/" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="https://dsaikiran01.github.io/assets/Dev-boy.png" />
-    <meta name="twitter:title" content="Dumpala Sai Kiran | Software Developer Portfolio" />
+    <meta name="twitter:title" content="Dumpala Sai Kiran | Software Engineer" />
     <meta name="twitter:description"
         content="Explore Dumpala Sai Kiran's portfolio for web and software development projects built with MERN stack, Google Cloud, and more." />
     <meta name="twitter:image" content="https://www.yourwebsite.com/assets/portfolio-preview.png" />
@@ -40,17 +40,20 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/certifications.css">
 </head>
 
 <body>
     <div id="container">
         <div class="navbar-modal"></div>
-        
+
         <!-- navbar -->
         <header id="header">
             <navbar class="navbar">
                 <!-- <div class="logo-section"> -->
-                <a href="#welcome-section" class="logo-a"><div class="logo">DSK</div></a>
+                <a href="#welcome-section" class="logo-a">
+                    <div class="logo">DSK</div>
+                </a>
                 <!-- </div> -->
 
                 <div id="hamburger" onclick="toggleHamburger()">
@@ -61,6 +64,7 @@
 
                 <div class="nav-menu">
                     <a class="nav-link" href="#welcome-section">About</a>
+                    <a class="nav-link" href="#certifications">Certifications</a>
                     <a class="nav-link" href="#projects">Work</a>
                     <a class="nav-link" href="#contact">Contact</a>
                     </ul>
@@ -75,16 +79,46 @@
             <p>I am a <span id="role">web developer</span></p>
         </main>
 
+
+        <!-- certifications -->
+        <section id="certifications">
+            <p class="certs-heading">These are my certifications</p>
+            <!-- <div class="underline"></div> -->
+
+            <div class="carousel-container">
+                <button class="carousel-arrow left" id="prevBtn">&#10094;</button>
+
+                <div class="certs-carousel-wrapper">
+                    <div class="certs-carousel" id="certs-carousel">
+                        <!-- certs render -->
+                    </div>
+                </div>
+
+                <button class="carousel-arrow right" id="nextBtn">&#10095;</button>
+            </div>
+
+            <div class="carousel-indicators" id="indicators"></div>
+
+            <a href="https://www.linkedin.com/in/dumpalasaikiran/details/certifications/" class="show-all"
+                target="_blank">
+                Show all
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </section>
+
+
         <!-- projects -->
         <section id="projects">
             <p class="projects-heading">These are some of my projects</p>
-            <div class="underline"></div>
+            <!-- <div class="underline"></div> -->
 
-            <div id="projects-grid"></div>
+            <div id="projects-grid"> <!-- project render --> </div>
 
-            <a href="https://github.com/dsaikiran01/" class="show-all" target="_blank">Show all <i
-                    class="fas fa-arrow-right"></i></a>
+            <a href="https://github.com/dsaikiran01/" class="show-all" target="_blank">Show all
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </section>
+
 
         <!-- contact -->
         <section id="contact">
