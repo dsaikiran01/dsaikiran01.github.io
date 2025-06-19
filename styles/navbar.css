@@ -17,7 +17,8 @@
     align-items: center;
     padding: 15px;
     position: relative;
-    background-color: var(--main-red);
+    /* background-color: var(--main-red); */
+    background-color: #5E0034;
 }
 
 /* Logo Styling */
@@ -26,9 +27,10 @@
     font-family: 'Dancing Script', cursive;
     /* font-size: 36px; */
     font-size: 3rem;
-    font-weight: bold;
-    color: transparent;  /* Make the text color transparent to show the background */
-    background: linear-gradient(45deg, #1AAD7B, #1cd396, #32cd32, #ffb000);
+    font-weight: bolder;
+    color: transparent;
+    background: #e7e3e6;
+    background: linear-gradient(45deg, #5f6eb1, #eee8e8, #8f2fac);
     background-clip: text;  /* Clips the background to the text */
     -webkit-background-clip: text; /* For Safari compatibility */
     
@@ -39,30 +41,6 @@
     transition: all 0.3s ease-in-out; /* Smooth transition */
     cursor: pointer;
 }
-
-.logo:hover {
-    animation: shine 1.5s infinite; /* Shimmer animation */
-}
-
-/* Define the shining animation */
-@keyframes shine {
-    0% {
-        text-shadow: 0 0 2px #1AAD7B, 0 0 3px #1AAD7B, 0 0 4px #1AAD7B;
-    }
-    25% {
-        text-shadow: 0 0 2px #1cd396, 0 0 3px #1cd396, 0 0 4px #1cd396;
-    }
-    50% {
-        text-shadow: 0 0 2px #32cd32, 0 0 3px #32cd32, 0 0 4px #32cd32;
-    }
-    75% {
-        text-shadow: 0 0 2px #ffb000, 0 0 3px #ffb000, 0 0 4px #ffb000;
-    }
-    100% {
-        text-shadow: 0 0 2px #1AAD7B, 0 0 3px #1AAD7B, 0 0 4px #1AAD7B;
-    }
-}
-
 
 .nav-menu {
     display: flex;
@@ -83,7 +61,7 @@
 }
 
 .nav-menu a:hover {
-    background: linear-gradient(red, rgb(246, 89, 89));
+    background: #F97272;
 }
 
 .navbar-modal {

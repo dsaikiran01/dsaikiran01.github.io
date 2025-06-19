@@ -1,7 +1,9 @@
 :root {
+  --main-text: #FDFDFD;
   --main-red: #AD1A2B;
-  --main-text: #FFFFFF;
   --main-gray: #303841;
+  --primary-accent: #e94560;
+   --background-gradient: linear-gradient(60deg, #121212 0%, #1f1f1f 100%);
 }
 
 * {
@@ -33,33 +35,6 @@ li {
   min-width: 100vw;
 }
 
-/* welcome section */
-
-#welcome-section {
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--main-text);
-  background: linear-gradient(60deg, #474747 0%, #181719 100%);
-}
-
-#welcome-section h1 {
-  font-size: 2.5rem;
-}
-
-#welcome-section p {
-  color: var(--main-red);
-  font-size: 2rem;
-  margin-top: -15px;
-  font-style: italic;
-  font-weight: 100;
-}
-
-#role {
-  color: #40923D
-}
 
 /* .underline {
   width: 35rem;

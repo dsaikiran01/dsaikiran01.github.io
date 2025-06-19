@@ -12,12 +12,16 @@ let currentRole = 0;
 
 function changeRole() {
   const roleElement = document.getElementById("role");
-  currentRole = (currentRole + 1) % roles.length;
-  roleElement.textContent = roles[currentRole];
+  roleElement.style.opacity = 0;
+
+  setTimeout(() => {
+    currentRole = (currentRole + 1) % roles.length;
+    roleElement.textContent = roles[currentRole];
+    roleElement.style.opacity = 1;
+  }, 300);
 }
 
-// changing roles on About
-setInterval(changeRole, 1500);
+setInterval(changeRole, 2000);
 
 
 // ****** navbar ******
