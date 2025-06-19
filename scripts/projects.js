@@ -5,19 +5,22 @@ const projects = [
     title: "Meme Generator",
     imgSrc: "./assets/Meme-Generator.png",
     altText: "Meme Generator",
-    link: "https://dsaikiran01.github.io/Meme-Generator/"
+    link: "https://dsaikiran01.github.io/Meme-Generator/",
+    description: "Easily create custom memes by uploading photos or using your camera. Add text, choose fonts and colors, and share hilarious memes with friends. Fully responsive and fun to use!"
   },
   {
     title: "Weather Pulse",
     imgSrc: "./assets/Weather-Pulse.png",
     altText: "Weather Pulse",
-    link: "https://weather-pulse-xi.vercel.app/"
+    link: "https://weather-pulse-xi.vercel.app/",
+    description: " WeatherPulse – A sleek, real-time weather dashboard with interactive graphs, location-based filtering, and map integration. Stay ahead of the forecast with a beautiful, responsive UI!"
   },
   {
     title: "Yoga Poses Recommender",
     imgSrc: "./assets/Yoga-Poses-Recommender.webp",
     altText: "Yoga Poses Recommender",
-    link: "https://github.com/dsaikiran01/Yoga-Poses-Recommender"
+    link: "https://github.com/dsaikiran01/Yoga-Poses-Recommender",
+    description: "A Flask web app that integrates Firestore, LangChain, and Vertex AI's Gemini to provide contextual Yoga pose recommendations using vector search."
   },
   {
     title: "Toy Store Search App",
@@ -33,7 +36,7 @@ const projects = [
   },
   {
     title: "Telephone Number Validator",
-    imgSrc: "./assets/Telephone-Number-Validator.png",
+    imgSrc: "./assets/Telephone-Number-Validator.webp",
     altText: "Telephone Number Validator",
     link: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/03-Building-a-Telephone-Number-Validator"
   },

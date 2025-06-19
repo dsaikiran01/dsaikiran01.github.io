@@ -27,27 +27,25 @@
     gap: 20px;
 }
 
-/* Entire tile box */
 .project-tile {
-    width: 500px;
-    height: 320px;
+    width: 360px;
+    height: 500px; /* 540px; */
     background-color: var(--main-gray);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.3s ease;
 }
 
 .project-tile:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* Image container ensures the image stays within bounds */
+/* Image now taller */
 .project-image-container {
-    height: 200px;
-    overflow: hidden;
+    height: 340px; /* reduced from 480px */    overflow: hidden;
     position: relative;
 }
 
@@ -61,32 +59,34 @@
 }
 
 .project-tile:hover .project-image-container img {
-    transform: scale(1.1); /* zoom in smoothly */
+    transform: scale(1.1);
 }
 
-/* Info section */
 .project-info {
-    padding: 12px 15px;
+    padding: 12px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex-grow: 1;
 }
 
 .project-name {
-    font-size: 1.5rem;
-    margin: 0 0 5px;
-    color: var(--main-text);
+    font-size: 1.4rem;
     font-weight: 600;
+    color: var(--main-text);
+    margin: 0 0 8px;
+    line-height: 1.3;
 }
 
-/* Truncated description */
 .project-description {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     color: var(--main-text);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* max 3 lines */
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .project-tile a {
