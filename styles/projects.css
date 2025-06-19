@@ -29,7 +29,8 @@
 
 .project-tile {
     width: 360px;
-    height: 540px;
+    /* height: 540px; */
+    height: 600px;
     background-color: var(--main-gray);
     border-radius: 12px;
     overflow: hidden;
@@ -140,7 +141,7 @@
     color: var(--main-text);
     line-height: 1.4;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* max 3 lines */
+    -webkit-line-clamp: 5; /* max 5 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -167,5 +168,14 @@
 @media (max-width: 768px) {
     .projects-heading {
         font-size: 2rem;
+    }
+
+    /* tile height changes on mobile devices */
+    .project-tile {
+        height: 540px;
+    }
+    
+    .project-description {
+        -webkit-line-clamp: 3; /* max 3 lines */
     }
 }
