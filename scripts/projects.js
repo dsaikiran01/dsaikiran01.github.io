@@ -1,12 +1,14 @@
 // ********** projects rendering **********
 
 const projects = [
-  {
+   {
     title: "Meme Generator",
     imgSrc: "./assets/Meme-Generator.png",
     altText: "Meme Generator",
-    link: "https://dsaikiran01.github.io/Meme-Generator/",
-    description: "Easily create custom memes by uploading photos or using your camera. Add text, choose fonts and colors, and share hilarious memes with friends. Fully responsive and fun to use!"
+    github: "https://github.com/dsaikiran01/Meme-Generator",
+    live: "https://dsaikiran01.github.io/Meme-Generator/",
+    description: "Easily create custom memes by uploading photos or using your camera. Add text, choose fonts and colors, and share hilarious memes with friends. Fully responsive and fun to use!",
+    technologies: ["HTML5", "CSS3", "Javascript", "Canvas API"]
   },
   {
     title: "Weather Pulse",
@@ -92,16 +94,25 @@ projects.forEach(project => {
   tile.className = "project-tile";
 
   tile.innerHTML = `
-    <a href="${project.link}" target="_blank">
-      <div class="project-image-container">
-        <img src="${project.imgSrc}" alt="${project.altText}" loading="lazy" />
-      </div>
-      <div class="project-info">
+    <div class="project-image-container">
+      <img src="${project.imgSrc}" alt="${project.altText}" loading="lazy" />
+    </div>
+    <div class="project-info">
+      <div class="project-header">
         <h3 class="project-name">${project.title}</h3>
-        <p class="project-description">${project.description}</p>
+        <div class="project-links">
+          ${project.github ? `<a href="${project.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>` : ""}
+          ${project.live ? `<a href="${project.live}" target="_blank" title="Live Demo">&#128279;</a>` : ""}
+        </div>
       </div>
-    </a>
+      <p class="project-description">${project.description}</p>
+      <div class="project-tech">
+        ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
+      </div>
+    </div>
   `;
+  // &#128187; 
+
 
   projectGrid.appendChild(tile);
 
