@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Yoga Poses Recommender",
-    imgSrc: "./assets/Yoga-Poses-Recommender.png",
+    imgSrc: "./assets/Yoga-Poses-Recommender.webp",
     altText: "Yoga Poses Recommender",
     link: "https://github.com/dsaikiran01/Yoga-Poses-Recommender"
   },
@@ -89,11 +89,17 @@ projects.forEach(project => {
   tile.className = "project-tile";
 
   tile.innerHTML = `
-      <a href="${project.link}" target="_blank">
-        <img src="${project.imgSrc}" alt="${project.altText}" loading="lazy">
-        <p class="project-description">${project.title}</p>
-      </a>
-    `;
+    <a href="${project.link}" target="_blank">
+      <div class="project-image-container">
+        <img src="${project.imgSrc}" alt="${project.altText}" loading="lazy" />
+      </div>
+      <div class="project-info">
+        <h3 class="project-name">${project.title}</h3>
+        <p class="project-description">${project.description}</p>
+      </div>
+    </a>
+  `;
 
   projectGrid.appendChild(tile);
+
 });
