@@ -23,23 +23,27 @@
 
 /* Logo Styling */
 
-.logo {
+.logo-a > .logo {
     font-family: 'Dancing Script', cursive;
-    /* font-size: 36px; */
     font-size: 3rem;
     font-weight: bolder;
     color: transparent;
-    background: #e7e3e6;
-    background: linear-gradient(45deg, #5f6eb1, #eee8e8, #8f2fac);
-    background-clip: text;  /* Clips the background to the text */
-    -webkit-background-clip: text; /* For Safari compatibility */
-    
-    display: inline-block;  /* Ensure the text behaves like an inline element */
-    height: auto;  /* Remove fixed height */
-    width: auto;   /* Remove fixed width */
-    
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+
+    background: linear-gradient(45deg, #ffd700, #ff9a8b, #ff6a00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+    height: auto;
+    width: auto;
+
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
+
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .nav-menu {
