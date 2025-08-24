@@ -2,6 +2,42 @@
 
 const projects = [
   {
+    title: "AstroWatch",
+    imgSrc: "./assets/AstroWatch.webp",
+    altText: "AstroWatch",
+    github: "https://github.com/dsaikiran01/AstroWatch",
+    live: "https://astro-watch-one.vercel.app/",
+    description: "Explore near-Earth objects and cosmic events with this sleek Next.js app. Powered by NASA APIs and secured with Supabase authentication, users can browse and filter space data through a responsive, TypeScript-based interface styled with Tailwind and Material UI.",
+    technologies: ["Next.js", "Typescript", "Supabase", "MUI", "TailwindCSS"]
+  },
+  {
+    title: "AI Shopping Assistant",
+    imgSrc: "./assets/AI-Chat-Assistant.webp",
+    altText: "AI Shopping Assistant",
+    github: "https://github.com/dsaikiran01/E-commerce-Chat-Assistant",
+    live: "https://github.com/user-attachments/assets/1043b1d9-15c2-48fd-a4b5-d89daf41c0f3",
+    description: "Shop smarter with this AI-powered assistant built using LangGraph.js, MongoDB, and React. It reasons like a real sales associate—searching products with semantic embeddings, adapting with fallback logic, and maintaining context throughout conversations.",
+    technologies: ["MERN", "Typescript", "Gemini", "LangGraph"]
+  },
+  {
+    title: "JobTailor AI",
+    imgSrc: "./assets/JobTailor-AI.webp",
+    altText: "JobTailor AI",
+    github: "https://github.com/dsaikiran01/JobTailor-AI",
+    live: "https://job-tailor-ai.vercel.app/",
+    description: "Generate polished, personalized cover letters in seconds with this AI-powered web app. Users can upload resumes, paste job descriptions, and edit AI-generated letters in a rich text editor. Built with React and Gemini API for a seamless, fully frontend experience.",
+    technologies: ["React", "Javascript", "TailwindCSS", "Gemini", "draft.js"]
+  },
+  {
+    title: "TaskMaster",
+    imgSrc: "./assets/TaskMaster.webp",
+    altText: "Roman Numeral Converter",
+    github: "https://github.com/dsaikiran01/TaskMaster",
+    live: "https://task-master-rose-omega.vercel.app/",
+    description: "Organize tasks efficiently with this full-featured MERN stack to-do app. Featuring JWT authentication, advanced filtering, smart grouping, real-time updates, and a sleek, responsive UI built with Tailwind and TypeScript.",
+    technologies: ["MERN", "Typescript", "TailwindCSS", "Docker", "JWT"]
+  },
+  {
     title: "Meme Generator",
     imgSrc: "./assets/Meme-Generator.webp",
     altText: "Meme Generator",
@@ -44,15 +80,15 @@ const projects = [
     description: " A dynamic web app that interacts with the PokéAPI Proxy to retrieve and display Pokémon information. Users can search by name or ID to access images, types, and stats. A fun, interactive way to explore API integration and asynchronous JavaScript.",
     technologies: ["HTML5", "CSS3", "Javascript"]
   },
-  {
-    title: "Telephone Number Validator",
-    imgSrc: "./assets/Telephone-Number-Validator.webp",
-    altText: "Telephone Number Validator",
-    github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/03-Building-a-Telephone-Number-Validator",
-    live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/03-Building-a-Telephone-Number-Validator",
-    description: " A US telephone number validator that checks for multiple valid formats including optional country codes, parentheses, spaces, and dashes. It provides immediate feedback and error handling, showcasing solid use of regular expressions in JavaScript.",
-    technologies: ["HTML5", "CSS3", "Javascript"]
-  },
+  // {
+  //   title: "Telephone Number Validator",
+  //   imgSrc: "./assets/Telephone-Number-Validator.webp",
+  //   altText: "Telephone Number Validator",
+  //   github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/03-Building-a-Telephone-Number-Validator",
+  //   live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/03-Building-a-Telephone-Number-Validator",
+  //   description: " A US telephone number validator that checks for multiple valid formats including optional country codes, parentheses, spaces, and dashes. It provides immediate feedback and error handling, showcasing solid use of regular expressions in JavaScript.",
+  //   technologies: ["HTML5", "CSS3", "Javascript"]
+  // },
   {
     title: "Survey Form",
     imgSrc: "./assets/Survey-Form.webp",
@@ -62,24 +98,24 @@ const projects = [
     description: "A responsive survey form designed to collect user input efficiently across devices. It includes form validation, varied input types, and a clean, user-friendly layout, making it a solid example of semantic HTML and CSS design.",
     technologies: ["HTML5", "CSS3"]
   },
-  {
-    title: "Tribute Page",
-    imgSrc: "./assets/Tribute-Page.webp",
-    altText: "Tribute Page",
-    github: "https://github.com/dsaikiran01/Responsive-Web-Design/tree/main/02-Building-a-Tribute-Page",
-    live: "https://dsaikiran01.github.io/Responsive-Web-Design/02-Building-a-Tribute-Page/",
-    description: "A visually appealing tribute page dedicated to a historical or notable figure. This project highlights the ability to structure content with clear sections and responsive design principles while maintaining a respectful tone and layout.",
-    technologies: ["HTML5", "CSS3"]
-  },
-  {
-    title: "Documentation Page",
-    imgSrc: "./assets/Documentation-Page.webp",
-    altText: "Technical Documentation Page",
-    github: "https://github.com/dsaikiran01/Responsive-Web-Design/tree/main/03-Building-a-Technical-Documentation-Page",
-    live: "https://dsaikiran01.github.io/Responsive-Web-Design/03-Building-a-Technical-Documentation-Page/",
-    description: "A structured technical documentation layout with fixed navigation for smooth reading and topic switching. This project showcases information architecture, CSS layout techniques, and accessibility-friendly navigation.",
-    technologies: ["HTML5", "CSS3"]
-  },
+  // {
+  //   title: "Tribute Page",
+  //   imgSrc: "./assets/Tribute-Page.webp",
+  //   altText: "Tribute Page",
+  //   github: "https://github.com/dsaikiran01/Responsive-Web-Design/tree/main/02-Building-a-Tribute-Page",
+  //   live: "https://dsaikiran01.github.io/Responsive-Web-Design/02-Building-a-Tribute-Page/",
+  //   description: "A visually appealing tribute page dedicated to a historical or notable figure. This project highlights the ability to structure content with clear sections and responsive design principles while maintaining a respectful tone and layout.",
+  //   technologies: ["HTML5", "CSS3"]
+  // },
+  // {
+  //   title: "Documentation Page",
+  //   imgSrc: "./assets/Documentation-Page.webp",
+  //   altText: "Technical Documentation Page",
+  //   github: "https://github.com/dsaikiran01/Responsive-Web-Design/tree/main/03-Building-a-Technical-Documentation-Page",
+  //   live: "https://dsaikiran01.github.io/Responsive-Web-Design/03-Building-a-Technical-Documentation-Page/",
+  //   description: "A structured technical documentation layout with fixed navigation for smooth reading and topic switching. This project showcases information architecture, CSS layout techniques, and accessibility-friendly navigation.",
+  //   technologies: ["HTML5", "CSS3"]
+  // },
   {
     title: "Product Landing Page",
     imgSrc: "./assets/Product-Page.webp",
@@ -89,33 +125,33 @@ const projects = [
     description: "A sleek landing page for a fictional product, featuring promotional content, call-to-action buttons, and responsive design. This page demonstrates effective layout structuring, branding, and modern front-end design.",
     technologies: ["HTML5", "CSS3"]
   },
-  {
-    title: "Cash Register",
-    imgSrc: "./assets/Cash-Register-Project.webp",
-    altText: "Cash Register",
-    github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/04-Building-a-Cash-Register-Project",
-    live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/04-Building-a-Cash-Register-Project",
-    description: "Simulates a functional cash register by calculating change based on item cost and cash provided. The app also considers the drawer’s available cash and displays relevant messages like \"Insufficient Funds\". It’s a practical project emphasizing decision logic.",
-    technologies: ["HTML5", "CSS3", "Javascript"]
-  },
-  {
-    title: "Palindrome Checker",
-    imgSrc: "./assets/Palindrome-Checker.webp",
-    altText: "Palindrome Checker",
-    github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/01-Building-a-Palindrome-Checker-Project",
-    live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/01-Building-a-Palindrome-Checker-Project",
-    description: " A simple yet robust web tool that checks if any word or phrase is a palindrome. It removes all non-alphanumeric characters and normalizes casing to ensure accurate detection, making it both educational and practical. Perfect for demonstrating basic text manipulation and logic.",
-    technologies: ["HTML5", "CSS3", "Javascript"]
-  },
-  {
-    title: "Roman Numeral Converter",
-    imgSrc: "./assets/Roman-Numeral-Converter.webp",
-    altText: "Roman Numeral Converter",
-    github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/02-Building-a-Roman-Numeral-Converter-Project",
-    live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/02-Building-a-Roman-Numeral-Converter-Project",
-    description: " This tool converts Arabic numbers into Roman numerals, respecting the syntax and rules of the Roman numeral system. It provides quick, real-time conversion and serves as a great example of algorithmic thinking applied in a user interface.",
-    technologies: ["HTML5", "CSS3", "Javascript"]
-  },
+  // {
+  //   title: "Cash Register",
+  //   imgSrc: "./assets/Cash-Register-Project.webp",
+  //   altText: "Cash Register",
+  //   github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/04-Building-a-Cash-Register-Project",
+  //   live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/04-Building-a-Cash-Register-Project",
+  //   description: "Simulates a functional cash register by calculating change based on item cost and cash provided. The app also considers the drawer’s available cash and displays relevant messages like \"Insufficient Funds\". It’s a practical project emphasizing decision logic.",
+  //   technologies: ["HTML5", "CSS3", "Javascript"]
+  // },
+  // {
+  //   title: "Palindrome Checker",
+  //   imgSrc: "./assets/Palindrome-Checker.webp",
+  //   altText: "Palindrome Checker",
+  //   github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/01-Building-a-Palindrome-Checker-Project",
+  //   live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/01-Building-a-Palindrome-Checker-Project",
+  //   description: " A simple yet robust web tool that checks if any word or phrase is a palindrome. It removes all non-alphanumeric characters and normalizes casing to ensure accurate detection, making it both educational and practical. Perfect for demonstrating basic text manipulation and logic.",
+  //   technologies: ["HTML5", "CSS3", "Javascript"]
+  // },
+  // {
+  //   title: "Roman Numeral Converter",
+  //   imgSrc: "./assets/Roman-Numeral-Converter.webp",
+  //   altText: "Roman Numeral Converter",
+  //   github: "https://github.com/dsaikiran01/JavaScript-Algorithms-and-Data-Structures/tree/main/02-Building-a-Roman-Numeral-Converter-Project",
+  //   live: "https://dsaikiran01.github.io/JavaScript-Algorithms-and-Data-Structures/02-Building-a-Roman-Numeral-Converter-Project",
+  //   description: " This tool converts Arabic numbers into Roman numerals, respecting the syntax and rules of the Roman numeral system. It provides quick, real-time conversion and serves as a great example of algorithmic thinking applied in a user interface.",
+  //   technologies: ["HTML5", "CSS3", "Javascript"]
+  // },
 
 ];
 

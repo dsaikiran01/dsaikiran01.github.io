@@ -7,7 +7,7 @@ const logo = document.querySelector('.logo-a');
 
 // ****** roles ******
 
-const roles = ["Web Developer", "Software Engineer", "Cloud Engineer", "Open-source Contributor"];
+const roles = ["Software Engineer", "Web Developer", "AI Enthusiast", "Open-source Contributor"];
 let currentRole = 0;
 
 function changeRole() {
