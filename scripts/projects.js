@@ -1,13 +1,22 @@
 // ********** projects rendering **********
 
 const projects = [
-   {
+  {
     title: "Kanban Board",
     imgSrc: "./assets/Kanban.webp",
     altText: "Kanban Board",
     github: "https://github.com/dsaikiran01/Dynamic-Kanban-Board",
     live: "https://dsaikiran01.github.io/Dynamic-Kanban-Board/",
     description: "Stay on top of your tasks with this sleek, interactive Kanban board built using vanilla JavaScript. A clean, modular design to track progress and stay organized daily. Featuring task creation, inline editing, drag-and-drop, and persistent storage, this board offers a smooth workflow with light/dark mode.",
+    technologies: ["HTML5", "CSS3", "Javascript"]
+  },
+  {
+    title: "Password Generator",
+    imgSrc: "./assets/Password-Generator.webp",
+    altText: "Password Generator",
+    github: "https://github.com/dsaikiran01/Password-Generator",
+    live: "https://dsaikiran01.github.io/Password-Generator/",
+    description: "Create secure passwords effortlessly with this simple password generator. Customize length, characters, and instantly regenerate passwords. Includes copy-to-clipboard and light/dark mode for a smooth experience.",
     technologies: ["HTML5", "CSS3", "Javascript"]
   },
   {
@@ -98,7 +107,7 @@ const projects = [
     description: "A collection of beautifully crafted, responsive web pages. Each project showcases clean, adaptive design, highlighting my skills in HTML and CSS to build polished, user-centric web experiences.",
     technologies: ["HTML5", "CSS3"]
   }
-  
+
   // template for project
   // {
   //   title: "",
