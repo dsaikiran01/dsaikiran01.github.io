@@ -1,6 +1,33 @@
 // ********** projects rendering **********
 
 const projects = [
+    {
+    title: "AstroWatch",
+    imgSrc: "./assets/AstroWatch.webp",
+    altText: "AstroWatch",
+    github: "https://github.com/dsaikiran01/AstroWatch",
+    live: "https://astro-watch-one.vercel.app/",
+    description: "Explore near-Earth objects and cosmic events with this sleek Next.js app. Powered by NASA APIs and secured with Supabase authentication, users can browse and filter space data through a responsive, TypeScript-based interface styled with Tailwind and Material UI.",
+    technologies: ["Next.js", "Typescript", "Supabase", "MUI", "TailwindCSS"]
+  },
+  {
+    title: "Meme Generator",
+    imgSrc: "./assets/Meme-Generator.webp",
+    altText: "Meme Generator",
+    github: "https://github.com/dsaikiran01/Meme-Generator",
+    live: "https://dsaikiran01.github.io/Meme-Generator/",
+    description: " Create and customize memes with this fun, fully responsive web app. Users can upload photos or use their camera to generate images, then add text with customizable fonts and colors. Built using the Canvas API, it’s intuitive and optimized for mobile and desktop.",
+    technologies: ["HTML5", "CSS3", "Javascript", "Canvas API"]
+  },
+   {
+    title: "JobTailor AI",
+    imgSrc: "./assets/JobTailor-AI.webp",
+    altText: "JobTailor AI",
+    github: "https://github.com/dsaikiran01/JobTailor-AI",
+    live: "https://job-tailor-ai.vercel.app/",
+    description: "Generate polished, personalized cover letters in seconds with this AI-powered web app. Users can upload resumes, paste job descriptions, and edit AI-generated letters in a rich text editor. Built with React and Gemini API for a seamless, fully frontend experience.",
+    technologies: ["React", "Javascript", "TailwindCSS", "Gemini", "draft.js"]
+  },
   {
     title: "Kanban Board",
     imgSrc: "./assets/Kanban.webp",
@@ -20,15 +47,6 @@ const projects = [
     technologies: ["HTML5", "CSS3", "Javascript"]
   },
   {
-    title: "AstroWatch",
-    imgSrc: "./assets/AstroWatch.webp",
-    altText: "AstroWatch",
-    github: "https://github.com/dsaikiran01/AstroWatch",
-    live: "https://astro-watch-one.vercel.app/",
-    description: "Explore near-Earth objects and cosmic events with this sleek Next.js app. Powered by NASA APIs and secured with Supabase authentication, users can browse and filter space data through a responsive, TypeScript-based interface styled with Tailwind and Material UI.",
-    technologies: ["Next.js", "Typescript", "Supabase", "MUI", "TailwindCSS"]
-  },
-  {
     title: "AI Shopping Assistant",
     imgSrc: "./assets/AI-Chat-Assistant.webp",
     altText: "AI Shopping Assistant",
@@ -38,15 +56,6 @@ const projects = [
     technologies: ["MERN", "Typescript", "Gemini", "LangGraph"]
   },
   {
-    title: "JobTailor AI",
-    imgSrc: "./assets/JobTailor-AI.webp",
-    altText: "JobTailor AI",
-    github: "https://github.com/dsaikiran01/JobTailor-AI",
-    live: "https://job-tailor-ai.vercel.app/",
-    description: "Generate polished, personalized cover letters in seconds with this AI-powered web app. Users can upload resumes, paste job descriptions, and edit AI-generated letters in a rich text editor. Built with React and Gemini API for a seamless, fully frontend experience.",
-    technologies: ["React", "Javascript", "TailwindCSS", "Gemini", "draft.js"]
-  },
-  {
     title: "TaskMaster",
     imgSrc: "./assets/TaskMaster.webp",
     altText: "Roman Numeral Converter",
@@ -54,15 +63,6 @@ const projects = [
     live: "https://task-master-rose-omega.vercel.app/",
     description: "Organize tasks efficiently with this full-featured MERN stack to-do app. Featuring JWT authentication, advanced filtering, smart grouping, real-time updates, and a sleek, responsive UI built with Tailwind and TypeScript.",
     technologies: ["MERN", "Typescript", "TailwindCSS", "Docker", "JWT"]
-  },
-  {
-    title: "Meme Generator",
-    imgSrc: "./assets/Meme-Generator.webp",
-    altText: "Meme Generator",
-    github: "https://github.com/dsaikiran01/Meme-Generator",
-    live: "https://dsaikiran01.github.io/Meme-Generator/",
-    description: " Create and customize memes with this fun, fully responsive web app. Users can upload photos or use their camera to generate images, then add text with customizable fonts and colors. Built using the Canvas API, it’s intuitive and optimized for mobile and desktop.",
-    technologies: ["HTML5", "CSS3", "Javascript", "Canvas API"]
   },
   {
     title: "Weather Pulse",

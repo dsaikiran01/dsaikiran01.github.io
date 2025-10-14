@@ -1,6 +1,12 @@
 // ********** certs rendering ***********
 
 const certifications = [
+   {
+    title: "OCI 2025 Certified AI Foundations Associate",
+    imgSrc: "./assets/certs/oci-aif.png",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=23F582C07FBD2EDDA422E17E98BAEAE007AC8845A6F3199F3B64117275EEC74D",
+    altText: "OCI AI Foundations Associate Certificate"
+  },
   {
     title: "Google Cybersecurity Specialization",
     imgSrc: "./assets/certs/gcpc.png",
@@ -11,20 +17,27 @@ const certifications = [
     title: "Freecodecamp Responsive Web Design",
     imgSrc: "./assets/certs/rwdc.png",
     link: "https://www.freecodecamp.org/certification/dsk/responsive-web-design",
-    altText: "Responsive Web Design"
+    altText: "Responsive Web Design Certificate"
   },
   {
     title: "Freecodecamp Javascript Data Structures and Algorithms",
     imgSrc: "./assets/certs/jsds.png",
     link: "https://www.freecodecamp.org/certification/dsk/javascript-algorithms-and-data-structures-v8",
-    altText: "Javascript Data Structures and Algorithms"
+    altText: "Javascript Data Structures and Algorithms Certificate"
   },
   {
     title: "Freecodecamp Backend Development and APIs",
     imgSrc: "./assets/certs/beda.png",
     link: "https://www.freecodecamp.org/certification/dsk/back-end-development-and-apis",
-    altText: "Backend Development and APIs"
+    altText: "Backend Development and APIs Certificate"
   }
+
+  // {
+  //   title: "",
+  //   imgSrc: "./assets/certs/.png",
+  //   link: "",
+  //   altText: ""
+  // },
 ];
 
 let currentCert = 0;
