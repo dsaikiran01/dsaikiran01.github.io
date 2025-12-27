@@ -1,7 +1,13 @@
 // ********** certs rendering ***********
 
 const certifications = [
-   {
+  {
+    title: "OCI 2025 Certified Foundations Associate",
+    imgSrc: "./assets/certs/oci-cif.png",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=DFF5B0722531121A6FEDA4003CC431CB9B22C5BD4A7CAA6BF61AE545F2C9B78D",
+    altText: "OCI Foundations Associate Certificate"
+  },
+  {
     title: "OCI 2025 Certified AI Foundations Associate",
     imgSrc: "./assets/certs/oci-aif.png",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=23F582C07FBD2EDDA422E17E98BAEAE007AC8845A6F3199F3B64117275EEC74D",
