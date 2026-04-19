@@ -34,7 +34,6 @@ This portfolio is divided into a few key sections:
 ## Contact Me 📬
 
 - **LinkedIn**: [Connect with me here](https://www.linkedin.com/in/dumpalasaikiran)
-- **Twitter**: [Follow me here](https://x.com/hi__dev__)
   
 Feel free to reach out—I’m always open to collaboration, code reviews, or even debugging your spaghetti code!
 

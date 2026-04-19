@@ -6,7 +6,6 @@ const projects = [
     imgSrc: "./assets/AstroWatch.webp",
     altText: "AstroWatch",
     github: "https://github.com/dsaikiran01/AstroWatch",
-    live: "https://astro-watch-one.vercel.app/",
     description: "Explore near-Earth objects and cosmic events with this sleek Next.js app. Powered by NASA APIs and secured with Supabase authentication, users can browse and filter space data through a responsive, TypeScript-based interface styled with Tailwind and Material UI.",
     technologies: ["Next.js", "Typescript", "Supabase", "MUI", "TailwindCSS"]
   },
@@ -60,7 +59,6 @@ const projects = [
     imgSrc: "./assets/TaskMaster.webp",
     altText: "Roman Numeral Converter",
     github: "https://github.com/dsaikiran01/TaskMaster",
-    live: "https://task-master-rose-omega.vercel.app/",
     description: "Organize tasks efficiently with this full-featured MERN stack to-do app. Featuring JWT authentication, advanced filtering, smart grouping, real-time updates, and a sleek, responsive UI built with Tailwind and TypeScript.",
     technologies: ["MERN", "Typescript", "TailwindCSS", "Docker", "JWT"]
   },
@@ -69,7 +67,6 @@ const projects = [
     imgSrc: "./assets/Weather-Pulse.webp",
     altText: "Weather Pulse",
     github: "https://github.com/dsaikiran01/WeatherPulse",
-    live: "https://weather-pulse-xi.vercel.app/",
     description: "A modern weather dashboard that provides real-time weather data with interactive charts and geolocation features. Users can view forecasts, switch locations, and explore weather patterns using map integration. The interface is sleek, responsive, and built for accessibility and speed.",
     technologies: ["React", "Typescript", "Material UI", "Leaflet.js", "Open Weather API"]
   },
